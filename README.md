@@ -9,3 +9,4 @@
 
 ## Error? 
 If something fails in a confusing way, check the syntax of the header with `-E`.
+This library practically assumes vaguely correct syntax so use a proper compiler to see what's broken.
