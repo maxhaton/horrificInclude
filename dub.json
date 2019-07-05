@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"maxhaton"
+	],
+	"copyright": "Copyright © 2019, maxhaton",
+	"description": "Include C headers with a library ",
+	"license": "GPLv3",
+	"name": "horrificinclude",
+	"dflags": [
+		"-J=./"
+	]
+}
