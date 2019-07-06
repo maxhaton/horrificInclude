@@ -1,6 +1,7 @@
 # horrificInclude
 ## Usage
 ```D
+//Make sure filename.h is present in a directory .J known to the compiler
 auto x = Horrific!"filename.h";
 x.callAFunction;
 x.global = 45;
