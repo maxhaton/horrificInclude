@@ -1,9 +1,12 @@
-import std.stdio;
+import std;
 import horrific;
+import pre;
+import recursivenightmare;
 void main()
 {
-	auto namedInclude = Horrific!"source/test/test.h"();
-
 	
+	auto namedInclude = Horrific!"test.h"();
+	namedInclude.preProcessed.each!writeln;
+	//
 	
 }

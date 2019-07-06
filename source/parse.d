@@ -1,9 +1,30 @@
 module parse;
 ///A definition from the C header
-class Cdef {
+class Program {
+    Type[] typeList;
+    Declaration[] decList;
+}
+class Type {
+    string dstringof;    
+}
+class SimpleType : Type {
 
 }
-///Output symbols from source file
-Cdef[] parseLines(string[] lines) {
+class Pointer : SimpleType {
 
+}
+
+enum DeclType {
+    isFunction,
+    isStruct,
+    isEnum,
+    isGlobal,
+    isUnion,    
+}
+struct Declaration {
+    DeclType thisIs;
+}
+///Output symbols from source file
+Program parseLines(string[] lines) {
+    return new Program;
 };

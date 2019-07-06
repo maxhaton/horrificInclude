@@ -7,6 +7,6 @@
 	"license": "GPLv3",
 	"name": "horrificinclude",
 	"dflags": [
-		"-J=./"
+		"-J=./source/test/"
 	]
 }

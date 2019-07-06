@@ -4,7 +4,6 @@ module pre;
 string[] preProcess(string input)
 {
     import std.string;
-
     /*
         Even if there are no # directives present we have to 
         join \ lines.
@@ -33,15 +32,14 @@ string[] joinBackLines(string[] lines)
     }
     return lines;
 }
-///Get the contents of a file
-template importer(string filePath)
-    if(__traits(compiles, import(filePath)))
-{
-    string importer = import(filePath);
+string[string] defaultDefines() {
+
 }
-///Handle preprocessor directives.
+///Handle preprocessor directives, spits out lines of processed C
 string[] directive(string[] input)
 {
-    string[] defined;
+    //Doesn't do big boy macros
+    string[string] defined;
+
     return input;
 }
