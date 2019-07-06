@@ -14,11 +14,11 @@ Includes must be of form `<*>`, because the library looks in locations given to 
 * Likely incorrect implementation of relatively complicated C standard
 * Currently doesn't even try to do function macros
 * Potentially huge compile time memory usage
-```C
-#include <aFile.h>
-#include <massiveSystemHeader.h>
-```
-When processed these effectively become nested template instantiations, which is no way to do program execution.
+    ```C
+    #include <aFile.h>
+    #include <massiveSystemHeader.h>
+    ```
+    When processed these effectively become nested template instantiations, which is no way to do program execution.
 * Guaranteed slower compile times for big headers, when compared to doing it properly e.g. write actual D bindings
 
 ## Error? 
