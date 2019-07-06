@@ -1,7 +1,9 @@
 # horrificInclude
 ## Usage
 ```D
-
+auto x = Horrific!"filename.h";
+x.callAFunction;
+x.global = 45;
 ```
 
 ### Includes
